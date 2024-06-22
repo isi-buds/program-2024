@@ -24,3 +24,16 @@ Make sure to join our **Slack workspace**, you should have received an email.
 You may want to download the Slack app because we will be using this for communication throughout the program.
 Make sure notifications are on.
 
+## Day 1 - June 24, 2024
+
+| Time           | Topic                              | Material                                                                                                                                  |
+|:---------------|:-----------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
+| 9 - 12pm       | Register a GitHub account          | [`r fa(name = "link")`](https://happygitwithr.com/github-acct)                                                                            |
+|                | GitHub Username Survey             | [`r fa(name = "link")`](https://forms.gle/MsR31Nbb5G5pADWp6)                                                                              |
+|                | Setup                              | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/0-setup/0-setup.html)               |
+|                | R & Rstudio                        | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/1-lec-r-basics/1-lec-r-basics.html) |
+|                | Quarto                             | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/2-lec-quarto/2-lec-quarto.html)     |
+|                | GitHub                             | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/3-lec-github/3-lec-github.html)     |
+| 1 - 1:30 pm    | Lab                                | [`r fa(name = "file")`](week1-material/day01-prerequisites/lab/day01-lab-coding-intro.qmd)                                                |
+| 1:30 - 3 pm    | Dr. Corrada's project presentation |                                                                                                                                           |
+| 3:10 - 3:30 pm | Publishing a website with GitHub   |                                                                                                                                           |
