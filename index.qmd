@@ -27,7 +27,7 @@ Make sure notifications are on.
 ## Day 1 - June 24, 2024
 
 | Time           | Topic                              | Material                                                                                                                                  |
-|:---------------|:-----------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
+|:------------|:------------|:---------------------------------------------|
 | 9 - 12pm       | Register a GitHub account          | [`r fa(name = "link")`](https://happygitwithr.com/github-acct)                                                                            |
 |                | GitHub Username Survey             | [`r fa(name = "link")`](https://forms.gle/MsR31Nbb5G5pADWp6)                                                                              |
 |                | Setup                              | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/0-setup/0-setup.html)               |
