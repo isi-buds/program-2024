@@ -7,7 +7,7 @@ format:
   revealjs:
     slide-number: true
     incremental: true
-    theme: ["slide-style.scss"]
+    theme: ["../slide-style.scss"]
     title-slide-attributes: 
       data-background-size: 12%
       data-background-position: 50% 75%
