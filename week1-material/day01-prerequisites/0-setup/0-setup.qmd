@@ -1,0 +1,66 @@
+---
+title: "Git/Hub Setup"
+execute:
+  echo: true
+subtitle: "ISI-BUDS 2024"
+format: 
+  revealjs:
+    slide-number: true
+    incremental: true
+    theme: ["slide-style.scss"]
+    title-slide-attributes: 
+      data-background-size: 12%
+      data-background-position: 50% 75%
+---
+
+
+## Goals
+
+- [Install git]{style="color:green;"} - You should already have a GitHub account online, now you need to install git locally on your computer
+
+- [Setup SSH key]{style="color:green;"} - This connects git on your computer to your GitHub account online
+
+
+## Goal 1: Install git
+
+This differs for Mac and Windows computers
+
+## Check to see if you already have git
+
+<center>
+
+<video width="80%" height="45%%" align = "center" controls>
+  <source src="screencast/00a-check-git-install.mp4" type="video/mp4">
+</video>
+
+</center>
+
+
+
+
+## Install git on Windows
+
+[Git for Windows](https://gitforwindows.org/)
+
+
+## Install git on Mac
+
+
+<center>
+
+<video width="80%" height="45%%" align = "center" controls>
+  <source src="screencast/00b-mac-git-install.mp4" type="video/mp4">
+</video>
+
+</center>
+
+
+## Goal 3: Setup SSH key
+
+<center>
+
+<video width="80%" height="45%%" align = "center" controls>
+  <source src="screencast/00d-ssh-setup.mp4" type="video/mp4">
+</video>
+
+</center>
