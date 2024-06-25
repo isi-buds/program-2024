@@ -27,13 +27,26 @@ Make sure notifications are on.
 ## Day 1 - June 24, 2024
 
 | Time           | Topic                              | Material                                                                                                                                  |
-|:------------|:------------|:---------------------------------------------|
+|:-----------------|:-----------------|:-----------------------------------|
 | 9 - 12pm       | Register a GitHub account          | [`r fa(name = "link")`](https://happygitwithr.com/github-acct)                                                                            |
 |                | GitHub Username Survey             | [`r fa(name = "link")`](https://forms.gle/MsR31Nbb5G5pADWp6)                                                                              |
-|                | Setup                              | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/0-setup/0-setup.html)               |
-|                | R & Rstudio                        | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/1-lec-r-basics/1-lec-r-basics.html) |
-|                | Quarto                             | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/2-lec-quarto/2-lec-quarto.html)     |
-|                | GitHub                             | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/3-lec-github/3-lec-github.html)     |
-| 1 - 1:30 pm    | Lab                                | [`r fa(name = "file")`](week1-material/day01-prerequisites/lab/day01-lab-coding-intro.qmd)                                                |
+|                | Setup                              | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/0-setup/0-setup.html){target="_blank"}               |
+|                | R & Rstudio                        | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/1-lec-r-basics/1-lec-r-basics.html){target="_blank"} |
+|                | Quarto                             | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/2-lec-quarto/2-lec-quarto.html){target="_blank"}     |
+|                | GitHub                             | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/3-lec-github/3-lec-github.html){target="_blank"}     |
+|                | Lab                                |                                                                                                                                           |
+| 1 - 1:30 pm    | Publishing a website with GitHub   |                                                                                                                                           |
 | 1:30 - 3 pm    | Dr. Corrada's project presentation |                                                                                                                                           |
-| 3:10 - 3:30 pm | Publishing a website with GitHub   |                                                                                                                                           |
+| 3:10 - 3:30 pm | Grad school discussion             |                                                                                                                                           |
+
+## Day 2 - June 25, 2024
+
+| Time             | Topic                            | Material                                                                                                             |
+|-------------------|------------------------------------|------------------|
+| 9 - 9:45 am      | Data Science                     | [`r fa(name = "desktop")`](week1-material/day02-data-viz/1-data-science/day02-slides_data_science.pdf){target="_blank"}               |
+| 9:45 - 10:30 am  | Basics of plotting               | [`r fa(name = "desktop")`](week1-material/day02-data-viz/2-univariate-data-viz/lecture-univariate-data-viz.html){target="_blank"}     |
+| 10:45 - 11:15 am | Lab part 1 (univariate)          |                                                                                                                      |
+| 11:15 - 12 pm    | Plotting mulivariate data        | [`r fa(name = "desktop")`](week1-material/day02-data-viz/3-multivariate-data-viz/lecture-multivariate-data-viz.html){target="_blank"} |
+| 1 - 2pm          | Lab part 1 (multivarate)         |                                                                                                                      |
+| 2:15 - 3 pm      | Principles of data visualization | [`r fa(name = "desktop")`](week1-material/day02-data-viz/4-data-viz-principles/day02-slides_dataviz_principles.pdf){target="_blank"}  |
+| 3 - 3:30 pm      | Lab part 2                       |                                                                                                                      |
