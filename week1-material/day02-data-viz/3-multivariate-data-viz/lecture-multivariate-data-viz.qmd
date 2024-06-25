@@ -19,6 +19,37 @@ format:
 
 :::
 
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+library(openintro)
+library(tidyverse)
+library(palmerpenguins)
+library(titanic)
+library(janitor)
+
+theme_set(theme_gray(base_size = 18))
+
+titanic <- titanic_train %>% 
+  clean_names() %>% 
+  select(survived, pclass, sex, age, fare, embarked) %>% 
+  mutate(
+    pclass = case_when(
+      pclass == 1 ~ "First", 
+      pclass == 2 ~ "Second",
+      pclass == 3 ~ "Third"
+    ),
+    embarked = case_when(
+      embarked == "S" ~ "Southampton",
+      embarked == "C" ~ "Cherbourg",
+      embarked == "Q" ~ "Queenstown"
+    ),
+    embarked = as.factor(embarked),
+    sex = as.factor(sex),
+    survived = as.logical(survived)
+  )
+```
 
 
 ## Stacked Bar-Plot
@@ -27,11 +58,15 @@ format:
 
 ::: {.column width="50%"}
 
-```{r `code-line-numbers`="3"}
+```{r `code-line-numbers`="5"}
 #| eval: false
-ggplot(data = titanic,
-       aes(x = pclass, 
-           fill = survived)) 
+ggplot(
+  data = titanic,
+  aes(
+    x = pclass, 
+    fill = survived
+  )
+) + 
   geom_bar() 
 ```
 
@@ -42,9 +77,13 @@ ggplot(data = titanic,
 ```{r}
 #| echo: false
 #| fig-height: 5
-ggplot(data = titanic,
-       aes(x = pclass, 
-           fill = survived)) +
+ggplot(
+  data = titanic,
+  aes(
+    x = pclass,
+    fill = survived
+  )
+) +
   geom_bar()
 ```
 :::
@@ -59,11 +98,15 @@ ggplot(data = titanic,
 
 ::: {.column width="50%"}
 
-```{r `code-line-numbers`="4"}
+```{r `code-line-numbers`="8"}
 #| eval: false
-ggplot(data = titanic,
-       aes(x = pclass, 
-           fill = survived)) + 
+ggplot(
+  data = titanic,
+  aes(
+    x = pclass, 
+    fill = survived
+  )
+) + 
   geom_bar(position = "fill") 
 ```
 
@@ -77,8 +120,10 @@ ggplot(data = titanic,
 ```{r}
 #| echo: false
 #| fig-height: 5
-ggplot(data = titanic,
-       aes(x = pclass, fill = survived)) +
+ggplot(
+  data = titanic,
+  aes(x = pclass, fill = survived)
+) +
   geom_bar(position = "fill")
 ```
 
@@ -136,9 +181,13 @@ Visualizing a single numerical and single categorical variable
 ```{r}
 #| eval: false
 #| fig-height: 5
-ggplot(penguins,
-       aes(x = species,
-           y = bill_length_mm))  +
+ggplot(
+  penguins,
+  aes(
+    x = species,
+    y = bill_length_mm
+  )
+)  +
   geom_violin()
 ```
 
@@ -150,9 +199,10 @@ ggplot(penguins,
 #| echo: false
 #| fig-height: 5
 #| fig-align: 'center'
-ggplot(penguins,
-       aes(x = species,
-           y = bill_length_mm))  +
+ggplot(
+  penguins,
+  aes(x = species, y = bill_length_mm)
+)  +
   geom_violin()
 ```
 
@@ -176,9 +226,13 @@ Visualizing a single numerical and single categorical variable
 ```{r}
 #| eval: false
 #| fig-height: 5
-ggplot(penguins,
-       aes(x = species,
-           y = bill_length_mm))  +
+ggplot(
+  penguins,
+  aes(
+    x = species, 
+    y = bill_length_mm
+  )
+)  +
   geom_boxplot()
 ```
 
@@ -190,9 +244,10 @@ ggplot(penguins,
 #| echo: false
 #| fig-height: 5
 #| fig-align: 'center'
-ggplot(penguins,
-       aes(x = species,
-           y = bill_length_mm))  +
+ggplot(
+  penguins,
+  aes(x = species, y = bill_length_mm)
+)  +
   geom_boxplot()
 ```
 
@@ -217,9 +272,13 @@ Visualizing Two Numerical Variables
 
 ```{r}
 #| eval: false
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm))  +
+ggplot(
+  penguins,
+  aes(
+    x = bill_depth_mm,
+    y = bill_length_mm
+  )
+)  +
   geom_point()
 ```
 
@@ -229,9 +288,9 @@ ggplot(penguins,
 
 ```{r}
 #| echo: false
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm))  +
+ggplot(
+  penguins,
+  aes(x = bill_depth_mm, y = bill_length_mm))  +
   geom_point()
 ```
 
@@ -256,10 +315,13 @@ Considering More Than Two Variables
 
 ```{r}
 #| eval: false
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm,
-           color = species)) +
+ggplot(
+  penguins,
+  aes(
+    x = bill_depth_mm,
+    y = bill_length_mm,
+    color = species
+  )) +
   geom_point()
 ```
 
@@ -269,10 +331,10 @@ ggplot(penguins,
 
 ```{r}
 #| echo: false
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm,
-           color= species))  +
+ggplot(
+  penguins,
+  aes(x = bill_depth_mm, y = bill_length_mm, color= species)
+) +
   geom_point()
 ```
 
@@ -286,11 +348,15 @@ ggplot(penguins,
 
 ::: {.column width="50%"}
 
-```{r eval = FALSE}
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm,
-           shape = species)) +
+```{r eval = FALSE, `code-line-numbers`="6"}
+ggplot(
+  penguins,
+  aes(
+    x = bill_depth_mm, 
+    y = bill_length_mm, 
+    shape = species
+  )
+) +
   geom_point()
 ```
 
@@ -300,10 +366,10 @@ ggplot(penguins,
 ::: {.column width="50%"}
 
 ```{r echo = FALSE}
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm,
-           shape = species))  +
+ggplot(
+  penguins,
+  aes(x = bill_depth_mm, y = bill_length_mm, shape = species)
+)  +
   geom_point()
 ```
 
@@ -311,39 +377,6 @@ ggplot(penguins,
 
 ::::
 
-##
-
-::::{.columns}
-
-::: {.column width="50%"}
-
-
-
-
-```{r eval = FALSE}
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm,
-           shape = species)) +
-  geom_point()
-```
-
-:::
-
-
-
-::: {.column width="50%"}
-
-```{r echo = FALSE}
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm,
-           shape = species))  +
-  geom_point()
-```
-
-:::
-::::
 
 ##
 
@@ -352,12 +385,15 @@ ggplot(penguins,
 
 ::: {.column width="50%"}
 
-```{r eval = FALSE}
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm,
-           shape = species,
-           color = species)) +
+```{r eval = FALSE, `code-line-numbers`="7"}
+ggplot(
+  penguins,
+  aes(
+    x = bill_depth_mm,
+    y = bill_length_mm,
+    shape = species,
+    color = species
+  )) +
   geom_point()
 ```
 
@@ -368,11 +404,15 @@ ggplot(penguins,
 ::: {.column width="50%"}
 
 ```{r echo=FALSE}
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm,
-           shape = species,
-           color = species))  +
+ggplot(
+  penguins,
+  aes(
+    x = bill_depth_mm,
+    y = bill_length_mm,
+    shape = species,
+    color = species
+  )
+)  +
   geom_point()
 ```
 
@@ -387,14 +427,18 @@ ggplot(penguins,
 ::: {.column width="50%"}
 
 
-```{r}
+```{r, `code-line-numbers`="8"}
 #| eval: false
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm,
-           shape = species,
-           color = species,
-           size = body_mass_g)) +
+ggplot(
+  penguins,
+  aes(
+    x = bill_depth_mm,
+    y = bill_length_mm,
+    shape = species,
+    color = species,
+    size = body_mass_g
+  )
+) +
   geom_point()
 ```
 
@@ -407,12 +451,15 @@ ggplot(penguins,
 
 ```{r}
 #| echo: false
-ggplot(penguins,
-       aes(x = bill_depth_mm,
-           y = bill_length_mm,
-           shape = species,
-           color = species,
-           size = body_mass_g))  +
+ggplot(
+  penguins,
+  aes(
+    x = bill_depth_mm,
+    y = bill_length_mm,
+    shape = species,
+    color = species,
+    size = body_mass_g
+  ))  +
   geom_point()
 ```
 
@@ -442,7 +489,7 @@ knitr::include_graphics("img/ggplot-summary.jpeg")
 
 ## Practice
 
-Using either the `babies`, `titanic` or `penguins` data frame ask a question that you are interested in answering. Visualize data to get a visual answer to the question. What is the visual telling you? Note all of this down in your lecture notes.
+Using either the `titanic` or `penguins` data frame ask a question that you are interested in answering. Visualize data to get a visual answer to the question. What is the visual telling you? Note all of this down in your lecture notes.
 
 
 

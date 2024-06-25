@@ -19,17 +19,11 @@ format:
 #| warning: false
 library(openintro)
 library(tidyverse)
-library(palmerpenguins)
 library(titanic)
 library(janitor)
 
 theme_set(theme_gray(base_size = 18))
 
-babies <- babies %>% 
-  mutate(
-    smoke = as.logical(smoke),
-    parity = as.logical(parity)
-  )
 titanic <- titanic_train %>% 
   clean_names() %>% 
   select(survived, pclass, sex, age, fare, embarked) %>% 
