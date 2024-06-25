@@ -2,7 +2,7 @@
 title: "Visualizing Data with ggplot"
 execute:
   echo: true
-subtitle: "ISI-BUDS 2023"
+subtitle: "ISI-BUDS 2024"
 format: 
   revealjs:
     slide-number: true
