@@ -65,4 +65,4 @@ Make sure notifications are on.
 |---------------|---------------|-----------------------------------------|
 | 9 - 12 pm | Monte Carlo | |
 | 1 - 2 pm | Lab | |
-| 2 - 3:30 pm | Dr. Guo's project presentation | |
+| 2 - 3:30 pm | Dr. Parker's project presentation | |
