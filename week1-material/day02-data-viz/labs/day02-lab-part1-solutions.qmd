@@ -1,6 +1,9 @@
 ---
 title: "Lab 2 Part 1 Solutions"
-format: html
+format: 
+  html:
+    toc: true
+    toc-expand: 2
 editor: visual
 ---
 

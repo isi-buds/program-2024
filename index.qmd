@@ -49,7 +49,7 @@ Make sure notifications are on.
 | 11:15 - 12 pm    | Plotting mulivariate data        | [`r fa(name = "desktop")`](week1-material/day02-data-viz/3-multivariate-data-viz/lecture-multivariate-data-viz.html){target="_blank"} |
 | 1 - 2pm          | Lab part 1 (multivarate)         | [Solutions](week1-material/day02-data-viz/labs/day02-lab-part1-solutions.html){target="_blank"}                                       |
 | 2:15 - 3 pm      | Principles of data visualization | [`r fa(name = "desktop")`](week1-material/day02-data-viz/4-data-viz-principles/day02-slides_dataviz_principles.pdf){target="_blank"}  |
-| 3 - 3:30 pm      | Lab part 2                       |                                                                                                                                       |
+| 3 - 3:30 pm      | Lab part 2                       |  [Solutions](week1-material/day02-data-viz/labs/day02-lab-part2-solutions.html){target="_blank"}  |
 ## Day 3 - June 26
 
 | Time     | Topic      | Material |
