@@ -57,7 +57,7 @@ Make sure notifications are on.
 | 9 - 12 pm | Intro to probability | |
 | 1 - 1:30 pm | Lab | |
 | 1:30 - 3 pm | Dr. Guo's project presentation | |
-| 3 - 3:30 pm | Lab continued | |
+| 3 - 3:30 pm | Lab continued | [Solutions](week1-material/day03-prob/day03-lab-prob-intro-solutions.html){target="_blank"} |
 
 ## Day 4 - June 27
 
