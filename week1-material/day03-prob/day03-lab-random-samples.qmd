@@ -21,7 +21,7 @@ First, let's recall/introduce how we can make our own functions in in R.
 Toy example:
 
 ```{r}
-add_two_numbers <- function(number1, number2){
+add_two_numbers <- function(number1=1, number2=2){
   return(number1 + number2)
 }
 
@@ -48,12 +48,12 @@ What is the inverse CDF of an exponential distribution? Uh oh. How can we calcul
 For example, if $X \sim Exp(0.1)$, then number $c$ such that $Pr(X < c) = 0.6$ is $F^{-1}(0.6)$ and can be obtained by the following R code
 
 ```{r}
-qexp(0.55, rate = 0.1)
+qexp(0.6, rate = 0.1)
 
 ## or we can code it up ourselves using our lecture notes
 exp_inverse_cdf <- function(x, rate=1){return(-(1/rate)*log(1-x))}
 
-exp_inverse_cdf(0.55, rate =0.1)
+exp_inverse_cdf(0.6, rate =0.1)
 ```
 
 Equipped with this observation, let's compute
@@ -64,7 +64,7 @@ rexp_isi_buds <- function(num_draws, exp_rate = 1){
   return(qexp(runif_draws, rate = exp_rate)) # Plug draws into cdf
 }
 
-my_exp_sample <- rexp_isi_buds(100000, exp_rate = 0.1)
+my_exp_sample <- rexp_isi_buds(10000, exp_rate = 0.1)
 ```
 
 We can plot our observations to visually asses that we did it correctly. Note the difference in default bin sizes for the two plotting methods.
@@ -78,13 +78,13 @@ library(tidyverse)
 
 data.frame("my_exp_sample" = my_exp_sample) %>% # Need data frame for ggplot()
   ggplot(aes(x = my_exp_sample)) +
-  geom_density() # Try changing the number of bins by setting bins = 10
+  geom_histogram() # Try changing the number of bins by setting bins = 10
 ```
 
 Let's compare our simulations with simulations produced by the R function `rexp()`
 
 ```{r}
-my_exp_sample2 <- rexp(100000, 0.1)
+my_exp_sample2 <- rexp(10000, 0.1)
 
 qqplot(my_exp_sample, my_exp_sample2)
 abline(0,1)
