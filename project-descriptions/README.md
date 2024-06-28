@@ -17,7 +17,7 @@ The 90+ Study is a community-based longitudinal study of aging and dementia in p
 The goal of this project is to investigate the relationship between hypertension and dementia in a cohort of the oldest-old individuals, and to explore potential explanations for the seemingly paradoxical association. For example, is it because people with hypertension are more likely to die before they develop dementia? Is the protective effect of hypertension attributable to the antihypertensive medications? Are there differences in the people who do and do not develop hypertension that could explain the association? We will explore topics such as bias due to censoring (death or drop-out), bias due to confounding (systematic differences between those who developed hypertension and those who did not), and longitudinal changes in blood pressure. Analytical strategies may include logistic regression, survival analysis, propensity score-based causal methods, and longitudinal data models. The project will follow a stepwise approach, where questions will be addressed sequentially, with increasingly complex methods applied at each step.
  
 ### References
-1.Corrada MM, Hayden KM, Paganini-Hill A, Bullain SS, Paganini-Hill A, DeMoss J, Aguirre C, Brookmeyer R, Kawas CH.  Age of onset of hypertension and risk of dementia in the oldest-old: The 90+ Study. Alzheimers Dement 13(2):103-110, 2017. https://doi.org/10.1016/j.jalz.2016.09.007
+1. Corrada MM, Hayden KM, Paganini-Hill A, Bullain SS, Paganini-Hill A, DeMoss J, Aguirre C, Brookmeyer R, Kawas CH.  Age of onset of hypertension and risk of dementia in the oldest-old: The 90+ Study. Alzheimers Dement 13(2):103-110, 2017. https://doi.org/10.1016/j.jalz.2016.09.007
 
 ### Bonus
 [The full video about The 90+ Study on 60 minutes](https://www.youtube.com/watch?v=wqKfL3z5yM4)
@@ -53,6 +53,30 @@ Teams can also propose other study objectives
 3. Elliott I, Pearson I, Dahal P, Thomas NV, Roberts T, Newton PN. Scrub typhus ecology: a systematic review of Orientia in vectors and hosts. Parasites & Vectors. 2019;12:513. 
 
 4. Blanton LS. Murine Typhus: A Review of a Reemerging Flea-Borne Rickettsiosis with Potential for Neurologic Manifestations and Sequalae. Infect Dis Rep. 2023;15:700–16
+
+
+## Mental health outcomes in internally displaced sexual minority men in Ukraine
+
+### Mentoring Team
+- Tetyana Vasylyeva, Assistant Professor of Public Health, UCI
+- Volodymyr Minin, Professor of Statistics, UCI
+- Federica Ricci, Statistics PhD Student, UCI
+
+
+## Background 
+The burden of HIV in Ukraine is one of the highest in Europe; at the end of 2021 there were an estimated 245,000 people living with HIV (PLWH) in Ukraine, with HIV prevalence amongst adults at 0.66%. While the annual number of new cases stabilized in Ukraine in 2012, efforts to contain the HIV epidemic in the country were threatened by the beginning of the war in 2014 and the escalation of the war to a full-scale invasion by Russia in 2022, accompanied by unprecedented since the World War II population displacement in Europe. 3.7 million internally displaced people (IDP) were registered in Ukraine as of September 25th, 2023, often facing large burdens of non-communicable and infectious diseases as well as mental health issues. In 2022, the HIV diagnosis rate in 2022 was 29.8 per 100,000, the second highest in Europe. 
+Men who have sex with men (MSM), often experience higher prevalence of HIV and their access to HIV treatment and prevention in Eastern Europe can be complicated by widespread stigma of same-sex relationships. With HIV prevalence estimated at 3.9%, and HIV risk 26 times higher than that of heterosexual men, MSM are the only key population in Ukraine with a projected rise in new HIV cases. 
+
+## Study Design and Data Description
+We will use data in a bio-behavior survey conducted by the Alliance for Public Health, a Ukrainian non-government organization combating HIV and other diseases in key populations. Participants were surveyed between August 2023 and January 2024 across 8 cities in Ukraine via respondent-driven sampling (RDS), a non-probability sampling technique often used in key populations. The bio-behavioral survey collected information on demographics (gender identity, marital status, education, occupation, place of residence, income in past 30 days), migration, narcotic substance use, sexual behavior, mental health, pre-exposure prophylaxis (PrEP), prior HIV testing and treatment experience, healthcare seeking experience, as well as stigma and discrimination. The biological testing component tested for HIV, HCV, HBV, syphilis, and TB. 
+
+## Objectives 
+The goal of the study is to investigate factors associated with negative mental health outcomes in MSM with and without history of displacement. While controlling for the geographic differences and differences in traumatic experiences, we will work on building a model that best describes the relationship between displacement and mental health in sexual minority men in a war setting.
+
+## References
+
+1. Dumchev, K., Sazonova, Y., Salyuk, T., & Varetska, O. (2018). Trends in HIV prevalence among people injecting drugs, men having sex with men, and female sex workers in Ukraine. International Journal of STD & AIDS, 29(13), 1337–1344. https://doi.org/10.1177/0956462418784096
+2. Clark, K., Pachankis, J., Khoshnood, K., Bränström, R., Seal, D., Khoury, D., Fouad, F. M., Barbour, R., & Heimer, R. (2021). Stigma, displacement stressors and psychiatric morbidity among displaced Syrian men who have sex with men (MSM) and transgender women: A cross-sectional study in Lebanon. BMJ Open, 11(5), e046996. https://doi.org/10.1136/bmjopen-2020-046996
 
 
 ## Neuropsychiatric Symptoms in Down Syndrome and Late-life Alzheimer’s Disease: Comparative Symptom Profiles and Clinical Course
