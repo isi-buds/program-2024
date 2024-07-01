@@ -27,7 +27,7 @@ Make sure notifications are on.
 ## Day 1 - June 24, 2024
 
 | Time           | Topic                              | Material                                                                                                                                                   |
-|:------------|:------------|:----------------------------------------------|
+|:--------------|:--------------|:-----------------------------------------|
 | 9 - 12pm       | Register a GitHub account          | [`r fa(name = "link")`](https://happygitwithr.com/github-acct)                                                                                             |
 |                | GitHub Username Survey             | [`r fa(name = "link")`](https://forms.gle/MsR31Nbb5G5pADWp6)                                                                                               |
 |                | Setup                              | [`r fa(name = "desktop")`](https://isi-buds.github.io/program-2024/week1-material/day01-prerequisites/0-setup/0-setup.html){target="_blank"}               |
@@ -42,7 +42,7 @@ Make sure notifications are on.
 ## Day 2 - June 25
 
 | Time             | Topic                            | Material                                                                                                                              |
-|-------------|-------------|---------------------------------------------|
+|---------------|---------------|------------------------------------------|
 | 9 - 9:45 am      | Data Science                     | [`r fa(name = "desktop")`](week1-material/day02-data-viz/1-data-science/day02-slides_data_science.pdf){target="_blank"}               |
 | 9:45 - 10:30 am  | Basics of plotting               | [`r fa(name = "desktop")`](week1-material/day02-data-viz/2-univariate-data-viz/lecture-univariate-data-viz.html){target="_blank"}     |
 | 10:45 - 11:15 am | Lab part 1 (univariate)          |                                                                                                                                       |
@@ -54,7 +54,7 @@ Make sure notifications are on.
 ## Day 3 - June 26
 
 | Time        | Topic                          | Material                                                                                       |
-|--------------|--------------|--------------------------------------------|
+|----------------|----------------|----------------------------------------|
 | 9 - 12 pm   | Intro to probability           | [`r fa(name = "desktop")`](week1-material/day03-prob/day_03_prob_lecture.pdf){target="_blank"} |
 | 1 - 1:30 pm | Lab                            |                                                                                                |
 | 1:30 - 3 pm | Dr. Guo's project presentation |                                                                                                |
@@ -63,15 +63,15 @@ Make sure notifications are on.
 ## Day 4 - June 27
 
 | Time        | Topic                             | Material                                                                                                                    |
-|-------------|-------------|----------------------------------------------|
+|---------------|---------------|------------------------------------------|
 | 9 - 12 pm   | Monte Carlo                       | [`r fa(name = "desktop")`](week1-material/day04-monte-carlo-integration/day_04_mc_lecture.pdf){target="_blank"}             |
 | 1 - 2 pm    | Lab                               | [Solutions](week1-material/day04-monte-carlo-integration/day04-lab-monte-carlo-integration-solutions.html){target="_blank"} |
 | 2 - 3:30 pm | Dr. Parker's project presentation |                                                                                                                             |
 
 ## Day 5 - June 28
 
-| Time        | Topic                                | Material |
-|-------------|--------------------------------------|----------|
-| 9 - 12 pm   | Monte Carlo Inference                |          |
-| 1 - 2 pm    | Lab                                  | [Solutions](week1-material/day05-monte-carlo-inference/day05-lab-mc-inference-solutions.html){target="_blank"}         |
-| 2 - 3:30 pm | Dr. Vasylyeva's project presentation |          |
+| Time        | Topic                                | Material                                                                                                       |
+|----------------|-----------------------------------------|----------------|
+| 9 - 12 pm   | Monte Carlo Inference                | [`r fa(name = "desktop")`](week1-material/day05-monte-carlo-inference/day05_mc_inference.pdf){target="_blank"}                                                                                                                |
+| 1 - 2 pm    | Lab                                  | [Solutions](week1-material/day05-monte-carlo-inference/day05-lab-mc-inference-solutions.html){target="_blank"} |
+| 2 - 3:30 pm | Dr. Vasylyeva's project presentation |                                                                                                                |
