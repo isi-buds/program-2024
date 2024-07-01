@@ -75,3 +75,14 @@ Make sure notifications are on.
 | 9 - 12 pm   | Monte Carlo Inference                | [`r fa(name = "desktop")`](week1-material/day05-monte-carlo-inference/day05_mc_inference.pdf){target="_blank"}                                                                                                                |
 | 1 - 2 pm    | Lab                                  | [Solutions](week1-material/day05-monte-carlo-inference/day05-lab-mc-inference-solutions.html){target="_blank"} |
 | 2 - 3:30 pm | Dr. Vasylyeva's project presentation |                                                                                                                |
+
+
+## Day 6 - July 1
+
+| Time        | Topic                                | Material                                                                                                       |
+|----------------|-----------------------------------------|----------------|
+| 9 - 10:15 am   |  Linear regression               |  |
+| 10:30 - 11:30 am    | Lab     |  |
+| 11:30 - 12 pm | Into to generalized linear models (GLMs)|  |
+| 1 - 1:45 pm    | GLM: Poisson regression |  |
+| 1:45 - 3:30 pm    | Lab |  |
