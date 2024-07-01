@@ -46,8 +46,8 @@ ggplot(data = shark_data, aes(x = Year, y = Attacks)) +
 ## Question 2
 
 Shark attacks are a rare event and Poisson regression seems like it may be appropriate to model these counts.
-If the following model were fit $$\log(Attacks_i) = \beta_0 + \beta_1 Year_i,$$ the intercept would not have a meaningful interpretation.
-Instead let's make it have a meaningful interpretation by adjusting for the baseline year $$\log(Attacks_i) = \beta_0 + \beta_1 I(Year_i - 1946).$$
+If the following model were fit $$\log(E[Attacks_i]) = \beta_0 + \beta_1 Year_i,$$ the intercept would not have a meaningful interpretation.
+Instead let's make it have a meaningful interpretation by adjusting for the baseline year $$\log(E[Attacks_i]) = \beta_0 + \beta_1 I(Year_i - 1946).$$
 
 Fit this model and interpret $\beta_0$ and $\beta_1$ in context.
 

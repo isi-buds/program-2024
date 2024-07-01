@@ -214,7 +214,7 @@ $ Fatalities &lt;dbl&gt; 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0
 </section>
 <section id="question-2" class="level2">
 <h2 class="anchored" data-anchor-id="question-2">Question 2</h2>
-<p>Shark attacks are a rare event and Poisson regression seems like it may be appropriate to model these counts. If the following model were fit <span class="math display">\[\log(Attacks_i) = \beta_0 + \beta_1 Year_i,\]</span> the intercept would not have a meaningful interpretation. Instead let’s make it have a meaningful interpretation by adjusting for the baseline year <span class="math display">\[\log(Attacks_i) = \beta_0 + \beta_1 I(Year_i - 1946).\]</span></p>
+<p>Shark attacks are a rare event and Poisson regression seems like it may be appropriate to model these counts. If the following model were fit <span class="math display">\[\log(E[Attacks_i]) = \beta_0 + \beta_1 Year_i,\]</span> the intercept would not have a meaningful interpretation. Instead let’s make it have a meaningful interpretation by adjusting for the baseline year <span class="math display">\[\log(E[Attacks_i]) = \beta_0 + \beta_1 I(Year_i - 1946).\]</span></p>
 <p>Fit this model and interpret <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> in context.</p>
 </section>
 <section id="question-2-solution" class="level2">

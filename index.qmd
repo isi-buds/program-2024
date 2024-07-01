@@ -87,3 +87,4 @@ Make sure notifications are on.
 | 1 - 1:45 pm      | GLM: Poisson regression                  |                                                                                                                                                                                                                 |
 |                  | Poisson regression example               | [`r fa(name = "file")`](week2-material/day06-regression/lecture-examples/poisson_regression_example.qmd){target="_blank"} [Data](week2-material/day06-regression/lecture-examples/c_data.csv){target="_blank"}  |
 | 1:45 - 3:30 pm   | Lab                                      | [`r fa(name = "file")`](week2-material/day06-regression/day06-lab-poisson-regression.qmd){target="_blank"} [Solution](week2-material/day06-regression/day06-lab-poisson-regression-solutions.html){target="_blank"} |
+| | Summary: Interpreting $\beta_1$ | [Guide](week2-material/day06-regression/interpreting-beta1.html){target="_blank"}

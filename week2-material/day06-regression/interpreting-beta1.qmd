@@ -1,0 +1,40 @@
+---
+title: "Regression Models"
+format: html
+---
+
+# Linear model (Continuous response variable)
+
+$$E[Y_i] = \beta_0 + \beta_1 X_i$$
+
+$\beta_1$ = difference in expected value of $Y$ associated with a 1 unit difference in $X$.
+
+## Generalized linear model: Poisson (Discrete response variable)
+
+$$log(E[Y_i]) = \beta_0 + \beta_1 X_i$$
+
+Note "Expected value" can be used interchangeably with "rate" with this model.
+
+### Difference in log expected value
+
+$$\beta_1$$
+
+= difference in log expected value of $Y$ associated with a 1 unit difference $X$
+
+OR
+
+= (multiplicitive) change in log rate ratio of $Y$ associated with a 1 unit difference in $X$
+
+### Multiplicative change in expected value
+
+$$exp(\beta_1)$$
+
+= (multiplicitive) change in rate ratio of $Y$ associated with a 1 unit difference in $X$
+
+### Percent change in expected value
+
+$$\text{For } exp(\beta_1) < 1: (1 - exp(\beta_1)) * 100\%$$
+
+$$\text{For } exp(\beta_1) > 1: (exp(\beta_1) -1) * 100\%$$
+
+= percent change in expected value of $Y$ associated with a 1 unit difference in $X$
