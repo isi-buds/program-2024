@@ -15,7 +15,12 @@ library(tidyverse)
 Each row of c_data.csv contains crime information from a post secondary institution, either a college or university.
 The variables include:
 
-Enrollment = enrollment at the school type = college (C) or university (U) nv = the number of violent crimes for that institution for the given year nvrate = number of violent crimes per 1000 students enroll1000 = enrollment at the school, in thousands region = region of the country (C = Central, MW = Midwest, NE = Northeast, SE = Southeast, SW = Southwest, and W = West)
+-   Enrollment = enrollment at the school
+-   type = college (C) or university (U)
+-   nv = the number of violent crimes for that institution for the given year
+-   nvrate = number of violent crimes per 1000 students
+-   enroll1000 = enrollment at the school, in thousands
+-   region = region of the country (C = Central, MW = Midwest, NE = Northeast, SE = Southeast, SW = Southwest, and W = West)
 
 (Section 4.6.1 of Beyond Multiple Linear Regression)
 
@@ -32,7 +37,9 @@ model1 <- glm(nv ~ type + region, family = poisson,
 summary(model1)
 ```
 
-##interpreting coefficient regionNE The reference category is Central.
+## interpreting coefficient regionNE
+
+The reference category is Central.
 So regionNE is the difference in log rate of crime (per 1000 students) between the NE as opposed to the Central region for universities of the same type
 
 ## calculating a wald confidence interval for the log rate ratio
