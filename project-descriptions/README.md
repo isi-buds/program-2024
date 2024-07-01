@@ -83,12 +83,12 @@ The goal of the study is to investigate factors associated with negative mental 
 
 
 ### Mentoring Team
-- David Sultzer, Psychiatry & Human Behavior
+- David Sultzer, Professor of Psychiatry & Human Behavior
 - Tiffany Hu, Medical Student, UCI
 - Dan Gillen, Chancellor's Professor and Chair of Statistics, UCI
 - Christina Monsserat Magana-Ramirez, Statistics PhD student, UCI
 
-### Description
+### Background
 Alzheimer’s disease (AD) has become a world-wide healthcare crisis.  With the advancing age of world populations, the prevalence of AD is expected to increase dramatically over the next three decades, leading to enormous medical morbidity, family challenges, and healthcare costs.  AD is characterized by abnormal amyloid protein plaques in the brain, along with associated pathophysiological processes.  Memory impairment due to AD usually begins after age 70.
 
 People with Down Syndrome are at very high risk of developing AD early in adulthood, due to the overexpression of amyloid precursor protein associated with triplication of chromosome 21.  Most with DS will have amyloid plaques of AD in the brain by age 40 and progressive cognitive decline by age 50.  
@@ -123,3 +123,27 @@ Other variables in the LOAD cohort: Geriatric Depression Scale, MOCA (global cog
 4. Sultzer DL. Mild behavioral impairment: A new domain of late-life psychiatric symptoms. Am J Geriatr Psychiatry 2019;27:835-837.
 5. Lewis CK, Bernstein OM, Grill JD, Gillen DL, Sultzer DL. Anxiety and depressive symptoms and cortical amyloid-β burden in cognitively unimpaired older adults. J Prev Alzheimers Dis 2022;9:286-296.
 6. Lautarescu BA, Holland AJ, Zaman SH. The early presentation of dementia in people with Down syndrome: A systematic review of longitudinal studies. Neuropsychol Rev 2017;27:31-45.
+
+## The time course of vesicant skin injury as detected by spatial transcriptomics
+
+### Mentoring team
+- Bogi Andersen, Professor of Biological Chemistry and Medicine, UCI
+- Babak Shahbaba, Professor of Statistics, UCI
+- Junyan Duan, Mathematical and Computational Systems Biology PhD Student, UCI
+
+### Background
+Sulfur Mustard (SM), also known as mustard gas, has been used in warfare since World War I, most recently in the Iraq and Syrian conflicts. Within a day of skin contact, irritant signs develop, progressing to large blisters, inflammation, and deep wounds that heal slower than burn wounds, leading to chronic skin changes (1). Organoarsenic compounds, including lewisite, were used in World Wars I and II. Similar to SM, lewisite causes skin erythema, edema, inflammation, blisters, and wounds leading to chronic skin changes in humans (1) and experimental animals. SM and lewisite still pose risks in chemical warfare and terrorism because of existing stockpiles and ease of production (2, 3). Despite significant research, we lack effective agents against vesicant skin injury. Nitrogen mustard and phenylarsine oxide, respective, are less toxic mustard and organoarsenical compounds that can be used in the laboratory. We are studying nitrogen mustard- and phenylarsine oxide-induced skin injury in mice, we are using single cell RNA-sequencing and spatial transcriptomics. The goal is to understand how these compounds damage skin with the goal of developing new treatments.
+
+### Study design and data description
+We treated mice topically on the skin with nitrogen mustard or phenylarsine oxide and collected skin samples at several different time points (from 0.5 to 24 hours). The skin samples were subjected to spatial transcriptomics analysis using two different probe sets in the Xenium platform from 10X Genomics. This allowed us to observe the changes in the expression of over 600 genes across time in the context of the skin. We have also collected skin for single cell RNA-sequencing covering the same time points. 
+
+### Objectives
+The initial objective of this project will be to define the cell types in the spatial transcriptomics data, using a combination of unsupervised clustering based on gene expression and label transfer from the single cell RNA-sequencing data (4). We will also evaluate and compare the transcriptional changes induced by the chemicals in different cell types over the time course.
+
+### References:
+1. Davis, J. (1944) Dermatologic aspects of vesicant war gases J Am Med Assoc 126, 209-213, 
+2. Casillas, R. P., Tewari-Singh, N., andGray, J. P. (2021) Special issue: emerging chemical terrorism threats Toxicol Mech Methods 31, 239-241 10.1080/15376516.2021.1904472
+3. Reutter, S. (1999) Hazards of chemical weapons release during war: new perspectives Environ Health Perspect 107, 985-990 10.1289/ehp.99107985
+4. Cable, D. M., Murray, E., Zou, L. S., Goeva, A., Macosko, E. Z., Chen, F. et al. (2022) Robust decomposition of cell type mixtures in spatial transcriptomics Nat Biotechnol 40, 517-526 10.1038/s41587-021-00830-w
+
+
