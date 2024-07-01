@@ -1,0 +1,90 @@
+---
+title: "poisson_regression_example"
+format: html
+editor: visual
+---
+
+## packages
+
+```{r}
+library(tidyverse)
+```
+
+## read in data
+
+Each row of c_data.csv contains crime information from a post secondary institution, either a college or university.
+The variables include:
+
+-   Enrollment = enrollment at the school
+-   type = college (C) or university (U)
+-   nv = the number of violent crimes for that institution for the given year
+-   nvrate = number of violent crimes per 1000 students
+-   enroll1000 = enrollment at the school, in thousands
+-   region = region of the country (C = Central, MW = Midwest, NE = Northeast, SE = Southeast, SW = Southwest, and W = West)
+
+(Section 4.6.1 of Beyond Multiple Linear Regression)
+
+```{r}
+crime_dat = read_csv("c_data.csv")
+```
+
+## fit an initial model comparing regions
+
+```{r}
+model1 <- glm(nv ~ type + region, family = poisson,
+               offset = log(enroll1000), data = crime_dat)
+
+summary(model1)
+```
+
+## interpreting coefficient regionNE
+
+The reference category is Central.
+So regionNE is the difference in log rate of crime (per 1000 students) between the NE as opposed to the Central region for universities of the same type
+
+## calculating a wald confidence interval for the log rate ratio
+
+```{r}
+log_CI_u = 0.78109 + 1.96 * 0.15305
+log_CI_l = 0.78109 - 1.96 * 0.15305
+```
+
+## calculating a wald confidence interval for the rate ratio
+
+```{r}
+CI_u = exp(log_CI_u)
+CI_l = exp(log_CI_l)
+```
+
+Thus the 95% rate ratio is between \[1.61, 2.94\].
+For the same university, it's plausible the rate of crime per 1000 students is 1.61 to 2.94 times as high in the NE region as compared to the Central region.
+
+## adding an interaction between region and school type
+
+```{r}
+model2 <- glm(nv ~ type + region + region:type, 
+              family = poisson,
+              offset = log(enroll1000), data = crime_dat)
+
+```
+
+## comparing the two models
+
+We are testing the Null hypothesis that the coefficients for all the interaction terms in the models are 0.
+
+```{r}
+anova(model2, model1)
+```
+
+With a p-value of 4.59e-16, we reject the null hypothesis that all of the interaction term coefficients are 0 at a 95% confidence level.
+
+## accounting for overdispersion
+
+```{r}
+model3 <- glm(nv ~ type + region + region:type, 
+               family = quasipoisson,
+               offset = log(enroll1000), data = crime_dat)
+
+```
+
+When we account for overdispersion, our standard errors get much larger.

@@ -1,0 +1,111 @@
+---
+title: "linear_regression_example"
+format: html
+editor: visual
+---
+
+## load packages
+
+```{r}
+library(tidyverse)
+```
+
+## load the data
+
+the data are from one health insurance company and describe the total costs for services provided to 788 subscribers with ischemic (coronary) heart disease during 1998 and 1999.
+Each line in the data set (ischemic.csv) provides an identification number and nine other variables:
+
+-   id = identification number cost = total cost of claims in dollars
+-   age = age of subscriber gender = gender of subscriber (1 if male; 0 if female)
+-   interv = number of interventions or procedures drugs = number of drugs prescribed
+-   ervisit = emergency room visits complic = number of complications
+-   comorb = number of other diseases that the subscriber had
+-   dur = number of days of duration of treatment (credit to Hal Stern for data)
+
+```{r}
+isc_data <- read_csv("ischemic.csv")
+```
+
+## look at the data
+
+```{r}
+head(isc_data)
+names(isc_data)
+str(isc_data)
+```
+
+## linear model of log cost and number of surgical interventions
+
+```{r}
+isc_data <- isc_data %>%
+  mutate(
+    log_cost=log(cost)) %>%
+  filter(cost != 0)
+model1 <- lm(log_cost ~ interv, data = isc_data)
+
+summary(model1)
+```
+
+# Multiple linear regression
+
+```{r}
+model2<-lm(log_cost ~ complic+comorb + gender+interv, data = isc_data)
+
+summary(model2)
+
+```
+
+## adding an interaction between gender and comorb
+
+```{r}
+modelint<-lm(log_cost ~ complic+comorb + gender+interv + gender:comorb, data=isc_data)
+
+summary(modelint)
+```
+
+## Interpreting the paramater for interventions
+
+The difference in expected log cost for two populations which have the same number of complications, comorbidities and gender, but differ by one intervention is 0.21.
+
+## Confidence interval for interventions
+
+```{r}
+# relying on normal distribution
+c(0.215301 - 1.96 * 0.008137, 0.215301 + 1.96 * 0.008137)
+
+# using t distribution
+confint(model2)
+```
+
+A plausible range for the effect size of interventions (conditioned on other parameters) is \[0.2, 0.23\]
+
+## looking at the residuals
+
+```{r}
+plot(model2)
+```
+
+Some signs of non-linearity
+
+## adding squared terms to the model
+
+```{r}
+isc_data <- isc_data %>%
+            mutate(complicsq = complic^2,
+                   comorbsq = comorb^2,
+                   intervsq = interv^2)
+model3<-lm(log_cost ~ complic+comorb + gender+interv + complicsq + comorbsq + intervsq, data=isc_data)
+
+summary(model3)
+
+```
+
+## testing the hypothesis that the squared terms are not useful
+
+We test the null hypothesis that the coefficients for all of the square terms is 0
+
+```{r}
+anova(model2, model3)
+```
+
+We would reject the null hypotheiss that the coefficients are all 0 at a 95% confidence level.
