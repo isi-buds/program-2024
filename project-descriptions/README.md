@@ -146,4 +146,23 @@ The initial objective of this project will be to define the cell types in the sp
 3. Reutter, S. (1999) Hazards of chemical weapons release during war: new perspectives Environ Health Perspect 107, 985-990 10.1289/ehp.99107985
 4. Cable, D. M., Murray, E., Zou, L. S., Goeva, A., Macosko, E. Z., Chen, F. et al. (2022) Robust decomposition of cell type mixtures in spatial transcriptomics Nat Biotechnol 40, 517-526 10.1038/s41587-021-00830-w
 
+## Longitudinal Associations between Sleep disturbances and Cardiometabolic Disorders among Ethnic Minority Women
 
+### Mentoring Team
+- Yuqing Guo, Associate Professor of Nursing, UCI
+- Babak Shahbaba, Professor of Statistics, UCI
+- Lynn Gao, Statistics PhD Student, UCI
+
+## Background
+Cardiometabolic disorders (CMDs), such as hypertension and diabetes, are leading causes of morbidity and mortality for women in the U.S. and can affect women at any age. Over 60 million women (44%) are living with a cardiovascular disease (CVD) with approximately 59% of Black women having a CVD compared to 42% of White counterparts. Of 12.7 million women (9%) with diagnosed diabetes, 13.2% were Black women, followed by 13.1% Hispanic, 10.1% Asian, and 7.5% White. Multiple risk factors are associated with CMDs in women such as elevated blood pressure (BP), emotional distress, being sedentary, ethnic minority, advanced maternal age, overweight/obesity, family history, pre-existing disease, socioeconomic status, limited health care access, and structural racism. There is a growing body of literature pointing to the impact of sleep disturbances on CMDs. Evidence shows that there are nonlinear effects of sleep duration on hypertension during pregnancy. Risks of gestational hypertension were higher in women reporting < 5 and ≥ 10 h/day sleep compared with their counterparts who had 8–9 h/day sleep. Poor sleep quality is also as- sociated with elevated BP in pregnant women. Emerging evidence demonstrates that the autonomic nervous system (ANS: sympathetic and parasympathetic) plays a crucial role in cardiometabolic functions and sleep.Heart rate (HR) and heart rate variability (HRV) are sensitive and cost-effective markers of ANS and prognostic risk factors for CMDs.No-dipping or reverse-dipping heart rate during sleep is found to be an independent risk factor for adverse cardiometabolic outcomes.In addition, insomnia is associated with elevated sympathetic activity (increased HR). Although sleep health sheds new light on CMDs, many studies use self-reported surveys assessing cross sectional sleep characteristics either at one-time point or over a few time points. It limits understanding of longitudinal sleep physiological changes within and between individuals.
+
+## Study Design and Data Description:
+The All of Us Research Program (AllofUs) is an initiative that accumulates multiple streams of healthrelated information in one million people across the U.S. to build one of the most diverse health databases in history. AllofUs collects various data using the Fitbit (e.g., sleep stages, total duration, awake time, heartrate, steps), self-reported SDoH (e.g., emotional distress, health literacy, healthcare access), and Electronic Health Records (e.g., clinical outcomes). For this proposed project, we will create a dataset by selecting participants with inclusion criteria: 1) being women (> 18 years), 2) having valid Fitbit data that include sleep, heart rate, and steps, and 3) having EHR data (e.g., systolic/diastolic blood pressure, hypertension,diabetes, HbA1c,). 
+
+## Objectives
+The proposed project will integrate life course perspective and utilize innovative analyses to understand how objective sleep parameters predict cardiometabolic disorders. 
+
+## References
+1. Burger, R. J., Delagrange, H., van Valkengoed, I. G. M., de Groot, C. J. M., van den Born, B. H., Gordijn, S. J., & Ganzevoort, W. (2022). Hypertensive Disorders of Pregnancy and Cardiovascular Disease Risk Across Races and Ethnicities: A Review. Frontiers in cardiovascular medicine, 9, 933822. doi.org/10.3389/fcvm.2022.933822
+2. Johnson, D. A., Cheng, P., FarrHenderson, M., & Knutson, K. (2023). Understanding the determinants of circadian health disparities and cardiovascular disease. Chronobiology international, 40(1), 83–90. doi.org/10.1080/07420528.2021.1966026
+3. Nevels TL, Wirth MD, Ginsberg JP, McLain AC, Burch JB. The role of sleep and heart rate variability in metabolic syndrome: evidence from the Midlife in the United States study. Sleep. 2023;46(5):zsad013. doi:10.1093/sleep/zsad013
